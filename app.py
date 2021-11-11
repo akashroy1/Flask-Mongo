@@ -7,7 +7,7 @@ from pymongo import message
 
 app = Flask(__name__)
 
-cluster = MongoClient("mongodb+srv://Admin:admin@cluster0.zuemm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient("MONGO URI")
 db = cluster["Book"]
 collection = db["book"]
 
